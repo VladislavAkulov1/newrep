@@ -4,7 +4,7 @@ public class zadanie3 {
 	public static void main(String[] args) {
         int sum1 = 0;
         int cyfry=0;
-        for(int i = 5;; i += 5) {
+        for(int i = 5;; i += 6) {
             sum1 += i;
             cyfry++;
             if(cyfry == 15) {
