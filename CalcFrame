@@ -1,0 +1,49 @@
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class CalcFrame extends JFrame implements ActionListener{
+	
+	private static final long serialVersionUID = 1L;
+	JTextField wpiszTekst;
+	JButton btn = new JButton("Oblicz"); 
+	JTextField wpiszTekst1;
+	JTextField wpiszTekst2;
+	JLabel wynik;
+	public CalcFrame() {
+		super("Mediana liczby");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(600, 300);
+ 		setLocation(300,300);	
+ 		setLayout(new FlowLayout());
+ 		wpiszTekst = new JTextField(15);
+ 		add(wpiszTekst);
+ 		add(new JLabel("+"));
+ 		wpiszTekst1 = new JTextField(15);
+ 		add(wpiszTekst1);
+ 		add(new JLabel("+"));
+ 		wpiszTekst2 = new JTextField(15);
+ 		add(wpiszTekst2);
+ 	    add(new JLabel("/3="));
+ 	    wynik =new JLabel("   ");
+ 	    add(wynik);
+ 		add(btn);
+        btn.addActionListener((ActionListener) this);
+		setVisible(true);
+	}
+	public void actionPerformed(ActionEvent e)
+    {
+        if (e.getSource() == btn) {
+            String liczba = wpiszTekst.getText(); 
+            String liczba1 = wpiszTekst1.getText();
+            String liczba2 = wpiszTekst2.getText();
+           double l = Integer.parseInt(liczba);
+            double m = Integer.parseInt(liczba1);
+            double f = Integer.parseInt(liczba2);
+            double y =(l+m+f)/3;
+            String w = String.valueOf(y); 
+            wynik.setText(w);
+        }
+    }
+
+}
