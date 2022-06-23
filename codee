@@ -7,7 +7,7 @@ public class zadanie3 {
         for(int i = 5;; i += 5) {
             sum1 += i;
             cyfry++;
-            if(cyfry == 10) {
+            if(cyfry == 15) {
                 break;
             }
         }
