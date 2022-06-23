@@ -13,7 +13,7 @@ public class CalcFrame extends JFrame implements ActionListener{
 	public CalcFrame() {
 		super("Mediana liczby");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(600, 300);
+		setSize(500, 200);
  		setLocation(300,300);	
  		setLayout(new FlowLayout());
  		wpiszTekst = new JTextField(15);
