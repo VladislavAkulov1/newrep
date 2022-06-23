@@ -1,0 +1,17 @@
+package zadanie3;
+
+public class zadanie3 {
+	public static void main(String[] args) {
+        int sum = 0;
+        int cyfry=0;
+        for(int i = 5;; i += 5) {
+            sum += i;
+            cyfry++;
+            if(cyfry == 10) {
+                break;
+            }
+        }
+        System.err.println(sum);
+    }
+
+}
