@@ -5,7 +5,7 @@ public class first {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				new CalcFrame();
- 			}
+				new CalcFrame1(); 			}
  		});
  	}
 }
